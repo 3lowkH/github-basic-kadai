@@ -25,8 +25,8 @@ public class Jyanken_Chapter28 {
 	
 	public String getRandom()
 	{
-		double rnd = Math.floor(Math.random()%3);
-		return switch((int)rnd)
+		int rnd = (int)Math.floor(Math.random()*3);
+		return switch(rnd)
 				{
 				case 0 -> "r";
 				case 1 -> "s";
@@ -47,22 +47,22 @@ public class Jyanken_Chapter28 {
 		{
 			switch (myHand) {
 			case "r": 
-				if(enemyHand == "s")
+				if(enemyHand.equals("s"))
 				{
 					System.out.println("自分の勝ちです");
 				}
-				else if(enemyHand == "p")
+				else if(enemyHand.equals("p"))
 				{
 					System.out.println("自分の負けです");
 				}
 				else {}
 				break;
 			case "s": 
-				if(enemyHand == "p")
+				if(enemyHand.equals("p"))
 				{
 					System.out.println("自分の勝ちです");
 				}
-				else if(enemyHand == "r")
+				else if(enemyHand.equals("r"))
 				{
 					System.out.println("自分の負けです");					
 				} 
@@ -70,11 +70,11 @@ public class Jyanken_Chapter28 {
 				break;
 			case "p": 
 				 
-				if(enemyHand == "r")
+				if(enemyHand.equals("r"))
 				{
 					System.out.println("自分の勝ちです");	
 				}
-				else if(enemyHand == "s")
+				else if(enemyHand.equals("s"))
 				{
 					System.out.println("自分の負けです");
 				}
