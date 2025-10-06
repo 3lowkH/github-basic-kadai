@@ -25,7 +25,7 @@ public class Jyanken_Chapter28 {
 	
 	public String getRandom()
 	{
-		int rnd = (int)Math.floor(Math.random()%3);
+		int rnd = (int)Math.floor(Math.random()*3);
 		return switch(rnd)
 				{
 				case 0 -> "r";
